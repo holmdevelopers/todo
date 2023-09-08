@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Lägg till padding mellan uppgifterna och knapparna */
+li span {
+  margin-right: 10px;
+  /* Lägg till en linje genom texten när uppgiften är klar */
+  text-decoration: none; /* Standardvärde, ingen linje */
+}
+
+li span.done {
+  text-decoration: line-through; /* Linje genom texten när klar */
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.remove {
+  background-color: #f44336; /* Röd */
+  color: white;
+  border: none;
+}
+
+button.remove:hover {
+  background-color: #d32f2f; /* Mörkare röd vid hover */
+}
+
+button.toggle {
+  background-color: #ffea00; /* Gul */
+  color: #333;
+  border: none;
+}
+
+button.toggle:hover {
+  background-color: #ffc107; /* Mörkare gul vid hover */
+}
